@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Grow your knowlagde</title>
+</head>
+
+<body>
+    <video src="CSS/VIDEO/banner.mp4" loop muted autoplay></video>
+    <div class="main-head">
+        <h1>Informative Knowladge</h1>
+    </div>
+    <div class="container">
+        <div class="box" id="result">
+            <div class="name">
+                <div class="heading">
+                    <h2 id="username"></h2>
+                </div>
+                <div class="counting">
+                    <span class="target">Correct</span>
+                    <span class="right" id="nextQ">0</span>
+                    <span>/</span>
+                    <span class="right" id="total"></span>
+                </div>
+            </div>
+            <div class="screen ">
+                <span class="question" id="queno"></span>
+                <h4 id="sawal" class="questions"></h4>
+            </div>
+            <div class="option_value ">
+
+                <input type="radio" id="option1" name="option" value="a" class="optionbtn">
+                <label class="opt-btn" for="option1"></label>
+
+                <input type="radio" id="option2" name="option" value="b" class="optionbtn">
+                <label class="opt-btn" for="option2"></label>
+
+                <input type="radio" id="option3" name="option" value="c" class="optionbtn">
+                <label class="opt-btn" for="option3"></label>
+
+                <input type="radio" id="option4" name="option" value="d" class="optionbtn">
+                <label class="opt-btn" for="option4"></label>
+
+            </div>
+            <div class="bottom">
+                <div class="info">
+                    <div class="counting">
+                        <span class="target">Remaining</span>
+                        <span class="right" id="Remaining"></span>
+                        <span>/</span>
+                        <span class="right" id="totalq"></span>
+                    </div>
+                    <div class="next" id="submit">Next</div>
+                </div>
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
+</body>
+
+</html>

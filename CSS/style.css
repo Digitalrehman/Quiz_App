@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nosifer&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-head h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Nosifer', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px blue;
+
+
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.36);
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+    margin: 4% auto 0;
+    box-shadow: 5px 5px 15px #3B668B;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .name {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.bottom .info {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.bottom .info .next {
+    text-align: center;
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: rgba(19, 112, 184, 0.5);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    transition: all 0.5s ease;
+    border: 0.5px solid blue;
+}
+
+.bottom .info .next:hover {
+    box-shadow: 6px 6px 4px black;
+}
+
+.box .name .heading {
+    padding: 10px 12px;
+    background-color: rgba(19, 112, 184, 0.5);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+}
+
+.container .screen {
+    margin: 20px 0;
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
+}
+
+.option_value .opt-btn:active {
+    border: 2px solid blue;
+}
+
+.option_value .opt-btn {
+    padding: 10px 12px;
+    background-color: transparent;
+    box-shadow: 2px 2px 4px black;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 5px;
+    transition: all 0.5s ease;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option_value .opt-btn:hover {
+    box-shadow: 4px 4px 7px black;
+
+}
+
+.option_value {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.screen .question {
+    margin: 3px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.bottom {
+    margin: 20px;
+
+}
+
+.optionbtn {
+    display: none;
+}
+
+.counting .right,
+.counting .target {
+    padding: 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+        margin: 2% auto 0;
+    }
+
+    .main-head h1 {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .option_value .opt-btn {
+        font-size: 16px;
+        height: 60px;
+        width: 250px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 2% auto 0;
+    }
+
+    .questions {
+        font-size: 17px;
+    }
+
+    .main-head h1 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .heading h2 {
+        font-size: 17px;
+    }
+
+    .counting .right,
+    .counting .target {
+        padding: 2px;
+    }
+}
